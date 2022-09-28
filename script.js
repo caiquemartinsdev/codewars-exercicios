@@ -47,6 +47,7 @@
 //====================================================
 
 //EXERCÍCIO 4 LOOP (7KYU)
+// https://www.codewars.com/kata/56a1c074f87bc2201200002e/train/javascript
 // Escreva uma função que dado, um array arr, retorna um array contendo em cada índice i 
 // a quantidade de números que são menores que arr[i]a direita.
 
@@ -57,23 +58,20 @@
 function smaller(nums) {
     for (var i = 0; i < nums.length ; i++){
         var numerovez = nums[i]
-        nums[i] = contador
         var contador = 0
+        nums[i] = contador
         console.log('NUMERO DA VEZ ' + numerovez)
 
       for (var j = 1; i+j < nums.length ; j++) {
        var numerodireita = nums[i+j]
-       nums[i] = contador
         console.log('NUMERO A DIREITA ' + numerodireita)
 
        if (numerovez > numerodireita){
          contador++
-         nums[i] = contador
          console.log('NUMERO CONTADOR ' + contador)
        }      
       }
     } return console.log(nums)
-  //code me
   }
 
 
