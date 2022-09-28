@@ -46,6 +46,35 @@
 // }
 //====================================================
 
+//EXERCÍCIO 4 LOOP (7KYU)
+// Escreva uma função que dado, um array arr, retorna um array contendo em cada índice i 
+// a quantidade de números que são menores que arr[i]a direita.
+
+// Por exemplo:
+// Input [5, 4, 3, 2, 1] => Output [4, 3, 2, 1, 0]
+// Input [1, 2, 0] => Output [1, 1, 0]
+
+function smaller(nums) {
+    for (var i = 0; i < nums.length ; i++){
+        var numerovez = nums[i]
+        var contador = 0
+        console.log('NUMERO DA VEZ ' + numerovez)
+
+      for (var j = 1; i+j < nums.length ; j++) {
+       var numerodireita = nums[i+j]
+        console.log('NUMERO A DIREITA ' + numerodireita)
+
+       if (numerovez > numerodireita){
+         contador++
+         nums[i] = contador
+         console.log('NUMERO CONTADOR ' + contador)
+       }       
+      }
+    } return console.log(nums)
+  //code me
+  }
+
+
 
 
 
