@@ -69,11 +69,13 @@ function smaller(nums) {
        if (numerovez > numerodireita){
          contador++
          console.log('NUMERO CONTADOR ' + contador)
+         nums[i] = contador
        }      
       }
     } return console.log(nums)
   }
 
+//   ===========================================
 
 
 
