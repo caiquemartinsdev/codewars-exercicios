@@ -29,10 +29,21 @@ EXERCÍCIO 2
 //   }
 ===================================================
 
+EXERCICIO 3
+// Você vai receber uma palavra. Seu trabalho é retornar o caractere do meio da palavra.
+// Se o comprimento da palavra for ímpar, retorne o caractere do meio. 
+// Se o comprimento da palavra for par, retorne os 2 caracteres do meio.
 
 
 
 
 
 
+
+
+
+
+
+
+=====================================================
 
