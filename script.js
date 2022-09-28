@@ -57,18 +57,20 @@
 function smaller(nums) {
     for (var i = 0; i < nums.length ; i++){
         var numerovez = nums[i]
+        nums[i] = contador
         var contador = 0
         console.log('NUMERO DA VEZ ' + numerovez)
 
       for (var j = 1; i+j < nums.length ; j++) {
        var numerodireita = nums[i+j]
+       nums[i] = contador
         console.log('NUMERO A DIREITA ' + numerodireita)
 
        if (numerovez > numerodireita){
          contador++
          nums[i] = contador
          console.log('NUMERO CONTADOR ' + contador)
-       }       
+       }      
       }
     } return console.log(nums)
   //code me
