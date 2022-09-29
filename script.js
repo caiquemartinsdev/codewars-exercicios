@@ -55,28 +55,35 @@
 // Input [5, 4, 3, 2, 1] => Output [4, 3, 2, 1, 0]
 // Input [1, 2, 0] => Output [1, 1, 0]
 
-function smaller(nums) {
-    for (var i = 0; i < nums.length ; i++){
-        var numerovez = nums[i]
-        var contador = 0
-        nums[i] = contador
-        console.log('NUMERO DA VEZ ' + numerovez)
+// function smaller(nums) {
+//     for (var i = 0; i < nums.length ; i++){
+//         var numerovez = nums[i]
+//         var contador = 0
+//         nums[i] = contador
+//         console.log('NUMERO DA VEZ ' + numerovez)
 
-      for (var j = 1; i+j < nums.length ; j++) {
-       var numerodireita = nums[i+j]
-        console.log('NUMERO A DIREITA ' + numerodireita)
+//       for (var j = 1; i+j < nums.length ; j++) {
+//        var numerodireita = nums[i+j]
+//         console.log('NUMERO A DIREITA ' + numerodireita)
 
-       if (numerovez > numerodireita){
-         contador++
-         console.log('NUMERO CONTADOR ' + contador)
-         nums[i] = contador
-       }      
-      }
-    } return console.log(nums)
-  }
+//        if (numerovez > numerodireita){
+//          contador++
+//          console.log('NUMERO CONTADOR ' + contador)
+//          nums[i] = contador
+//        }      
+//       }
+//     } return console.log(nums)
+//   }
 
 //   ===========================================
 
+//EXERCÍCIO 5 CONTAGEM DE VOGAIS (7KYU)
+//https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript
+
+const vogais = ['a','e','i','o','u']
+function getCount(str) {
+
+}
 
 
 
