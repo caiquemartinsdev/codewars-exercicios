@@ -80,40 +80,52 @@
 //EXERCÍCIO 5 CONTAGEM DE VOGAIS (7KYU)
 //https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript
 
-const vogais = ['a','e','i','o','u']
-function getCount(str) {
-  var contadorVogais = 0
-  for(let i = 0 ; i < str.length ; i++){
-    if(vogais.some(str[i]) === 'true'){
-      contadorVogais++
-    }
-  }
-}
+// const vogais = ['a','e','i','o','u']
+// function getCount(str) {
+//   var contadorVogais = 0
+//   for(let i = 0 ; i < str.length ; i++){
+//     if(vogais.some(str[i]) === 'true'){
+//       contadorVogais++
+//     }
+//   }
+// }
 
-//=============================================
-Exercício 6 MÁSCARA (6KYU)
+// //=============================================
+// Exercício 6 MÁSCARA (6KYU)
 https://www.codewars.com/kata/525f50e3b73515a6db000b83/train/javascript
 
 // Escreva uma função que aceite um array de 10 inteiros (entre 0 e 9), 
 // que retorne uma string desses números na forma de um número de telefone.
 //EX: createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"
 
-function createPhoneNumber(numbers){
-  let um = numbers[0]
-  let dois = numbers[1]
-  let tres = numbers[2]
-  let quatro = numbers[3]
-  let cinco = numbers[4]
-  let seis = numbers[5]
-  let sete = numbers[6]
-  let oito = numbers[7]
-  let nove = numbers[8]
-  let dez = numbers[9]
+// function createPhoneNumber(numbers){
+//   let um = numbers[0]
+//   let dois = numbers[1]
+//   let tres = numbers[2]
+//   let quatro = numbers[3]
+//   let cinco = numbers[4]
+//   let seis = numbers[5]
+//   let sete = numbers[6]
+//   let oito = numbers[7]
+//   let nove = numbers[8]
+//   let dez = numbers[9]
   
-  return `(${um}${dois}${tres}) ${quatro}${cinco}${seis}-${sete}${oito}${nove}${dez}`
+//   return `(${um}${dois}${tres}) ${quatro}${cinco}${seis}-${sete}${oito}${nove}${dez}`
+// }
+
+// Melhor código para esse exercício 
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+function createPhoneNumber(numbers){
+  var format = "(xxx) xxx-xxxx";
+  
+  for(var i = 0; i < numbers.length; i++)
+  {
+    format = format.replace('x', numbers[i]);
+    console.log(format)
+  }
+
+  return format;
 }
-
-
 
 
 
