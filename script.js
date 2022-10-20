@@ -92,7 +92,7 @@
 
 // //=============================================
 // Exercício 6 MÁSCARA (6KYU)
-https://www.codewars.com/kata/525f50e3b73515a6db000b83/train/javascript
+//https://www.codewars.com/kata/525f50e3b73515a6db000b83/train/javascript
 
 // Escreva uma função que aceite um array de 10 inteiros (entre 0 e 9), 
 // que retorne uma string desses números na forma de um número de telefone.
@@ -114,18 +114,81 @@ https://www.codewars.com/kata/525f50e3b73515a6db000b83/train/javascript
 // }
 
 // Melhor código para esse exercício 
-var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-function createPhoneNumber(numbers){
-  var format = "(xxx) xxx-xxxx";
+// var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+// function createPhoneNumber(numbers){
+//   var format = "(xxx) xxx-xxxx";
   
-  for(var i = 0; i < numbers.length; i++)
-  {
-    format = format.replace('x', numbers[i]);
-    console.log(format)
-  }
+//   for(var i = 0; i < numbers.length; i++)
+//   {
+//     format = format.replace('x', numbers[i]);
+//     console.log(format)
+//   }
 
-  return format;
+//   return format;
+// }
+
+
+//=================================================
+// //EXERCÍCIO (7) DE PROMISES - CURSO ONE BIT CODE
+
+// // Temos 3 Naves a disposição, 
+// //porém as naves não podem dar partida com a carga atual com menos de 30% da capacidade
+
+// let sophia = {
+//     capacidade: 10,
+//     cargaAtual: 5,
+//     porcentagemCargaAtual: (cargaAtual*100)/capacidade
+// }
+
+// let amsterda = {
+//     capacidade: 14,
+//     cargaAtual: 10,
+//     porcentagemCargaAtual: (cargaAtual*100)/capacidade
+// }
+
+// let estrelaAna = {
+//     capacidade: 20,
+//     cargaAtual: 4,
+//     porcentagemCargaAtual: (cargaAtual*100)/capacidade
+// }
+
+// //Temos que dar partida nas 3 e ver quais delas conseguiremos sair
+
+// =====================================
+
+// EXERCICIO 8 - 
+
+// Complete a solução para que ela divida a string em pares de dois caracteres.
+// Se a string contiver um número ímpar de caracteres, ela deverá substituir
+//  o segundo caractere ausente do par final por um sublinhado ('_').
+
+// Exemplos:
+
+// * 'abc' =>  ['ab', 'c_']
+// * 'abcdef' => ['ab', 'cd', 'ef']
+
+function solution(entrada){
+    let string = entrada
+    
+    let respostaFinal = []
+    
+    for (let i = 0; i < string.length; i =+ 2){
+      if((string.length % 2) != 0 && i == string.length){
+        respostaFinal.push(string[i+'_'])
+      }
+     else {
+      respostaFinal.push(string[i+(i+1)])
+    }
 }
+    return console.log(respostaFinal)
+ }
+
+ solution('abcdef')
+
+
+
+
+
 
 
 
