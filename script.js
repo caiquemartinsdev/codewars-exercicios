@@ -156,7 +156,8 @@
 
 // =====================================
 
-// EXERCICIO 8 - 
+// // EXERCICIO 8 - 
+// https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/train/javascript
 
 // Complete a solução para que ela divida a string em pares de dois caracteres.
 // Se a string contiver um número ímpar de caracteres, ela deverá substituir
@@ -165,26 +166,38 @@
 // Exemplos:
 
 // * 'abc' =>  ['ab', 'c_']
-// * 'abcdef' => ['ab', 'cd', 'ef']
+// // * 'abcdef' => ['ab', 'cd', 'ef']
 
-function solution(entrada){
-    let string = entrada
+
+// function solution(entrada){
     
-    let respostaFinal = []
-    
-    for (let i = 0; i < string.length; i =+ 2){
-      if((string.length % 2) != 0 && i == string.length){
-        respostaFinal.push(string[i+'_'])
-      }
-     else {
-      respostaFinal.push(string[i+(i+1)])
-    }
-}
-    return console.log(respostaFinal)
- }
+//     let string = entrada
+//     let respostaFinal = []
+       
+//     for (let i = 0; i < string.length; i+=2){
+      
+//       if(((string.length % 2) != 0) && i == string.length-1){
+//         respostaFinal.push(string.slice(i,i+1) + "_")
+//         console.log("IF "+respostaFinal)
+//       }
+//      else {
+      
+//       respostaFinal.push(string.slice(i,i+2))
+//       console.log("ELSE "+respostaFinal)
+//       console.log(i)
+//     }
+// }
+//     return console.log(respostaFinal)
+//  }
 
- solution('abcdef')
+// -------------
 
+// Melhor resposta do Code Wars
+// function solution(s){
+//   return (s+"_").match(/.{2}/g)||[]
+// }
+
+// ==================================================
 
 
 
